@@ -38,8 +38,23 @@ public class LinqQueries
     {
         return this._librosLt
             .Where(filtro)
-            .OrderByDescending(orden)
+            .OrderBy(orden)
             .Take(take)
             .Skip(skip);
     }
+
+    public IEnumerable<dynamic> GetCustomBook(
+        Func<Book, dynamic> select,
+        Func<Book, bool> where,
+        Func<Book, object> order,
+        int take,
+        int skip = 0)
+    {
+        return this._librosLt
+            .Where(where)
+            .OrderBy(order)
+            .Take(take)
+            .Select(select);
+    }
+
 }
