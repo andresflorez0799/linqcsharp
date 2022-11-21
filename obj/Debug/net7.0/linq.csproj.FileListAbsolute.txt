@@ -1,0 +1,15 @@
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\bin\Debug\net7.0\linq.exe
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\bin\Debug\net7.0\linq.deps.json
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\bin\Debug\net7.0\linq.runtimeconfig.json
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\bin\Debug\net7.0\linq.dll
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\bin\Debug\net7.0\linq.pdb
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.csproj.AssemblyReference.cache
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.AssemblyInfoInputs.cache
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.AssemblyInfo.cs
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.csproj.CoreCompileInputs.cache
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.dll
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\refint\linq.dll
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.pdb
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\linq.genruntimeconfig.cache
+D:\OneDrive\Documentos\Universidad\Platzi\Curso C#\linq\obj\Debug\net7.0\ref\linq.dll
