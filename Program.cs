@@ -1,6 +1,22 @@
 ﻿LinqQueries queries = new LinqQueries();
 
-var selectCustom = queries.GetCustomBook(select: x => new Book { Title = x.Title, PageCount = x.PageCount },
+Func<Book, bool> condicionWhere = (x => x.PublishedDate.Year >= 2015 && x.Title != string.Empty);
+
+var titulos1 = queries.TitulosSeparadosGuion(condicionWhere);
+var titulos2 = queries.TitulosSeparadosGuionV2(condicionWhere);
+var diccionario = queries.DiccionarioPorLetra();
+
+char letra = 'S';
+
+foreach (var item in diccionario[letra])
+{
+    Console.WriteLine(item);
+}
+
+
+
+
+/*var selectCustom = queries.GetCustomBook(select: x => new Book { Title = x.Title, PageCount = x.PageCount },
                                          where: x => x.PageCount > 400,
                                          order: x => x.PublishedDate,
                                          take: 4,
@@ -19,7 +35,7 @@ Func<Book, bool> filtroJava = x => x.Categories != null && x.Categories.Contains
 
 var filtradoAny = queries.GetFilterAny(filtroPublicado2005);
 var datosFiltrado = queries.GetCustomFilter(x => x.PageCount > 400, x => x.PublishedDate, 4, 2);
-
+*/
 
 //Console.WriteLine("{0, -60} {1, 15} {2, 15}\n", "TITULO", "PAGINAS", "PUBLICACION");
 //foreach (var i in datosFiltrado) Console.WriteLine(i.ToString());
