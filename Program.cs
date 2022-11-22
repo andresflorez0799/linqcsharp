@@ -1,16 +1,19 @@
 ﻿LinqQueries queries = new LinqQueries();
 
-Func<Book, bool> condicionWhere = (x => x.PublishedDate.Year >= 2015 && x.Title != string.Empty);
+Func<Book, bool> condicionWhere1 = (x => x.PublishedDate.Year > 2008);
+Func<Book, bool> condicionWhere2 = (x => x.PageCount > 500);
 
-var titulos1 = queries.TitulosSeparadosGuion(condicionWhere);
-var titulos2 = queries.TitulosSeparadosGuionV2(condicionWhere);
+var titulos1 = queries.GetCustomFilter(condicionWhere1);
+var titulos2 = queries.GetCustomFilter(condicionWhere2);
+
 var diccionario = queries.DiccionarioPorLetra();
+//foreach (var item in diccionario['S']) Console.WriteLine(item);
 
-char letra = 'S';
+var join = titulos1.Join(titulos2, a => a.Title, b => b.Title, (a, b) => a);
 
-foreach (var item in diccionario[letra])
+foreach (var i in join)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(i);
 }
 
 
