@@ -40,7 +40,6 @@ public class LinqQueries
         return this._librosLt
             .Where(filtro)
             .OrderBy(orden)
-            .Take(take)
             .Skip(skip);
     }
 
@@ -88,5 +87,7 @@ public class LinqQueries
     {
         return this._librosLt.ToLookup(p => p.Title[0], p => p);
     }
+
+
 
 }
